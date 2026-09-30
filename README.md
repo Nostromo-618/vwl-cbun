@@ -2,14 +2,14 @@
 
 [![license: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
 
-Vanduo Labs **miscellaneous component bundle** for Vue 3: code-editor, draw,
+Vanduo Web Labs **miscellaneous component bundle** for Vue 3: code-editor, draw,
 hex-grid, and music-player — Vue wrappers plus framework-agnostic cores, each
 on a tree-shakeable subpath. Extracted 1-to-1 from `@vanduo-oss/vd3-cbun`
 (widget versions preserved). Charts and flowchart live in
 `@vanduo-oss/vd3-charts` / `@vanduo-oss/vd3-flowchart`.
 
 This is a **Labs sibling repo**, not a public npm package. Consume it via
-`link:` / workspace next to [Vanduo Labs](https://github.com/vanduo-oss/labs).
+`link:` / workspace next to [Vanduo Web Labs](https://github.com/vanduo-oss/labs).
 
 **Status: 1.0.0** (bundle). Widget constants: code-editor / draw `1.1.0`,
 hex-grid `1.2.0`, music-player `1.0.1`. APIs stay `Vd*` with `--vd-*` tokens
@@ -91,7 +91,7 @@ import '@vanduo-oss/vd3/css/core';
 
 ## Docs
 
-Interactive demos live on [Vanduo Labs](https://labs.vanduo.dev/#widgets).
+Interactive demos live on [Vanduo Web Labs](https://labs.vanduo.dev/#widgets).
 
 ## License
 

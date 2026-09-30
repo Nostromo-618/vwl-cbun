@@ -13,7 +13,7 @@ All notable changes to `@vanduo-oss/vdl-cbun` are documented here.
 
 ## 1.0.0 — 2026-09-14
 
-First public release of `@vanduo-oss/vdl-cbun` — Vanduo Labs miscellaneous
+First public release of `@vanduo-oss/vdl-cbun` — Vanduo Web Labs miscellaneous
 Vue 3 component bundle extracted 1-to-1 from `@vanduo-oss/vd3-cbun@1.4.2`:
 
 - `./code-editor` (+ `./code-editor/highlight`, `./code-editor/css`) — `1.1.0`

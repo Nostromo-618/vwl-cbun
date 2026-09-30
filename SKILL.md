@@ -1,6 +1,6 @@
 ---
 name: vanduo-vdl-cbun
-description: Use when adding Vanduo Labs widgets with @vanduo-oss/vdl-cbun — Vue 3 miscellaneous bundle (code-editor, draw, hex-grid, music-player) with tree-shakeable subpath exports. Covers install, per-subpath imports, CSS, theming, and per-component versioning.
+description: Use when adding Vanduo Web Labs widgets with @vanduo-oss/vdl-cbun — Vue 3 miscellaneous bundle (code-editor, draw, hex-grid, music-player) with tree-shakeable subpath exports. Covers install, per-subpath imports, CSS, theming, and per-component versioning.
 ---
 
 # @vanduo-oss/vdl-cbun

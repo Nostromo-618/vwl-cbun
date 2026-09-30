@@ -1,7 +1,7 @@
 schema: spec-driven
 
 context: |
-  Package: @vanduo-oss/vdl-cbun (MIT, vanduo-oss org). Vanduo Labs miscellaneous
+  Package: @vanduo-oss/vdl-cbun (MIT, vanduo-oss org). Vanduo Web Labs miscellaneous
   Vue 3 component bundle: code-editor, draw, hex-grid, music-player — one package
   with tree-shakeable subpath exports (./code-editor, ./code-editor/highlight,
   ./code-editor/css, ./draw, ./draw/css, ./hex-grid, ./hex-grid/hex-math,
