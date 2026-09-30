@@ -1,7 +1,7 @@
 /**
- * Vue 3 bindings for @vanduo-oss/vdl-cbun/music-player — primary export.
+ * Vue 3 bindings for @vanduo-oss/vwl-cbun/music-player — primary export.
  *
- *   import { VdMusicPlayer } from '@vanduo-oss/vdl-cbun/music-player';
+ *   import { VdMusicPlayer } from '@vanduo-oss/vwl-cbun/music-player';
  *   <VdMusicPlayer :tracks="tracks" :options="{ showPlaylist: true }" @trackchange="onTrack" />
  *
  * The core (./core.js) stays framework-agnostic. SSR-safe: the player is

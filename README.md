@@ -1,4 +1,4 @@
-# @vanduo-oss/vdl-cbun
+# @vanduo-oss/vwl-cbun
 
 [![license: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
 
@@ -20,8 +20,8 @@ and `vd3-*.css` filenames from the extract.
 Clone beside Labs (or any host app), build, then depend with `link:`:
 
 ```sh
-git clone https://github.com/vanduo-oss/vdl-cbun.git
-cd vdl-cbun && pnpm install && pnpm run build
+git clone https://github.com/vanduo-oss/vwl-cbun.git
+cd vwl-cbun && pnpm install && pnpm run build
 ```
 
 In the host `package.json`:
@@ -29,7 +29,7 @@ In the host `package.json`:
 ```json
 {
   "dependencies": {
-    "@vanduo-oss/vdl-cbun": "link:../vdl-cbun"
+    "@vanduo-oss/vwl-cbun": "link:../vwl-cbun"
   }
 }
 ```
@@ -40,18 +40,18 @@ provide the Vanduo `--vd-*` design tokens (see [Theming](#theming)).
 ## Subpath-import model
 
 ```js
-import { VdCodeEditor } from '@vanduo-oss/vdl-cbun/code-editor';
-import { highlight, tokenize, LANGUAGES } from '@vanduo-oss/vdl-cbun/code-editor/highlight';
-import '@vanduo-oss/vdl-cbun/code-editor/css';
+import { VdCodeEditor } from '@vanduo-oss/vwl-cbun/code-editor';
+import { highlight, tokenize, LANGUAGES } from '@vanduo-oss/vwl-cbun/code-editor/highlight';
+import '@vanduo-oss/vwl-cbun/code-editor/css';
 
-import { VdDraw } from '@vanduo-oss/vdl-cbun/draw';
-import '@vanduo-oss/vdl-cbun/draw/css';
+import { VdDraw } from '@vanduo-oss/vwl-cbun/draw';
+import '@vanduo-oss/vwl-cbun/draw/css';
 
-import { VdHexGrid } from '@vanduo-oss/vdl-cbun/hex-grid';
-import { hexToPixel } from '@vanduo-oss/vdl-cbun/hex-grid/hex-math';
+import { VdHexGrid } from '@vanduo-oss/vwl-cbun/hex-grid';
+import { hexToPixel } from '@vanduo-oss/vwl-cbun/hex-grid/hex-math';
 
-import { VdMusicPlayer } from '@vanduo-oss/vdl-cbun/music-player';
-import '@vanduo-oss/vdl-cbun/music-player/css';
+import { VdMusicPlayer } from '@vanduo-oss/vwl-cbun/music-player';
+import '@vanduo-oss/vwl-cbun/music-player/css';
 ```
 
 Named exports only — no default export. Importing one subpath never pulls
@@ -61,7 +61,7 @@ and class names are preserved from cbun (`vd3-draw.css`, `.vd-draw-*`).
 ## Version map
 
 ```js
-import { VDL_CBUN_VERSIONS } from '@vanduo-oss/vdl-cbun';
+import { VWL_CBUN_VERSIONS } from '@vanduo-oss/vwl-cbun';
 // { 'code-editor': '1.1.0', draw: '1.1.0', 'hex-grid': '1.2.0', 'music-player': '1.0.1' }
 ```
 
