@@ -16,7 +16,7 @@
   --vd-code-editor-gutter-text: var(--vd-text-muted, #9ca3af);
   --vd-code-editor-active-line: var(--vd-color-primary-alpha-10, rgba(59, 130, 246, 0.08));
   --vd-code-editor-caret: var(--vd-color-primary, #3b82f6);
-  --vd-code-editor-selection: rgba(var(--vd-color-primary-rgb, 59, 130, 246), 0.24);
+  --vd-code-editor-selection: color-mix(in srgb, var(--vd-color-primary, #3b82f6) 24%, transparent);
   --vd-code-editor-placeholder: var(--vd-text-muted, #9ca3af);
 
   /* Typography */
@@ -54,7 +54,7 @@
 [data-theme='dark'] {
   --vd-code-editor-gutter-bg: var(--vd-bg-secondary, #161b22);
   --vd-code-editor-active-line: var(--vd-color-primary-alpha-10, rgba(88, 166, 255, 0.1));
-  --vd-code-editor-selection: rgba(var(--vd-color-primary-rgb, 88, 166, 255), 0.28);
+  --vd-code-editor-selection: color-mix(in srgb, var(--vd-color-primary, #58a6ff) 28%, transparent);
   --vd-code-editor-tk-comment: #7d8590;
   --vd-code-editor-tk-keyword: #c792ea;
   --vd-code-editor-tk-string: #9ece6a;
@@ -74,7 +74,7 @@
   :root:not([data-theme]) {
     --vd-code-editor-gutter-bg: var(--vd-bg-secondary, #161b22);
     --vd-code-editor-active-line: var(--vd-color-primary-alpha-10, rgba(88, 166, 255, 0.1));
-    --vd-code-editor-selection: rgba(var(--vd-color-primary-rgb, 88, 166, 255), 0.28);
+    --vd-code-editor-selection: color-mix(in srgb, var(--vd-color-primary, #58a6ff) 28%, transparent);
     --vd-code-editor-tk-comment: #7d8590;
     --vd-code-editor-tk-keyword: #c792ea;
     --vd-code-editor-tk-string: #9ece6a;
