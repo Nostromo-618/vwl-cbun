@@ -5,14 +5,14 @@
   "description": "Vanduo Web Labs miscellaneous Vue 3 component bundle \u2014 code-editor, draw, hex-grid, music-player",
   "type": "module",
   "license": "MIT",
-  "author": "vanduo-oss",
-  "homepage": "https://github.com/vanduo-oss/vwl-cbun#readme",
+  "author": "nostromo-618",
+  "homepage": "https://github.com/nostromo-618/vwl-cbun#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vanduo-oss/vwl-cbun.git"
+    "url": "git+https://github.com/nostromo-618/vwl-cbun.git"
   },
   "bugs": {
-    "url": "https://github.com/vanduo-oss/vwl-cbun/issues"
+    "url": "https://github.com/nostromo-618/vwl-cbun/issues"
   },
   "sideEffects": [
     "**/*.css"
