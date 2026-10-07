@@ -57,8 +57,7 @@ MUST NOT be exported from this package.
 ### Requirement: toolchain baseline
 
 The repo MUST pin `packageManager: "pnpm@10.28.2"` and engines
-`pnpm >=10` and a consumer-friendly node floor (`node >=20.19.0`). Dev/CI
-Node 24 is pinned by `packageManager` and `.github/workflows/ci.yml`. It MUST
+`pnpm >=10` and a consumer-friendly node floor (`node >=20.19.0`). It MUST
 define scripts `build`, `clean`, `lint`, `format`, `format:check`,
 `stylelint`, `test`, `test:types`
 (`tsc --noEmit -p tests/types/tsconfig.json`), `test:e2e`, `prepack`, and
@@ -103,20 +102,16 @@ An automated test MUST assert the sync.
 - **THEN** the maps are deep-equal and `Object.isFrozen(VWL_CBUN_VERSIONS)` is
   true
 
-### Requirement: CI pipeline
+### Requirement: no remote CI
 
-The repo MUST provide `.github/workflows/ci.yml` with SHA-pinned actions,
-least-privilege `permissions: contents: read`, pnpm 10.28.2, Node 24.
-Gates run: frozen install, audit, lint, format:check, stylelint, test,
-**build**, `test:types`, then Playwright Chromium. A `dependabot.yml` MUST
-keep the pinned actions current (weekly, grouped, 2-day cooldown).
+The repo MUST NOT include GitHub Actions workflows or Dependabot config.
+Quality gates stay local: frozen install, audit, lint, format:check,
+stylelint, test, build, `test:types`, then Playwright Chromium.
 
-#### Scenario: CI runs the full gate sequence
+#### Scenario: Actions are absent
 
-- **GIVEN** a push or pull request to `main`
-- **WHEN** the `ci` workflow runs
-- **THEN** it executes install, audit, lint, format:check, stylelint, test,
-  build, test:types, and the Playwright smoke, all with a read-only token
+- **WHEN** `.github` is inspected
+- **THEN** it contains no workflow files and no `dependabot.yml`
 
 ### Requirement: multi-entry isolation build
 
